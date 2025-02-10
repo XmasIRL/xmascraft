@@ -1,0 +1,19 @@
+
+pack.name=Xmascraft SMP Add-on
+pack.description=Add content from the Xmascraft SMP to your world!
+
+multiplayer.player.joined=§7...§r
+multiplayer.player.joined.renamed=§7...§r
+multiplayer.player.joined.realms=§7...§r
+multiplayer.player.joined.realms.renamed=§7...§r
+permissions.toast.playerJoined=§7...§r
+multiplayer.player.left=§7...§r
+multiplayer.player.left.realms=§7...§r
+
+multiplayer.player.changeToSkin=§7...§r
+
+accessibility.chat.howtoopen=§7...§r
+
+action.hint.exit.player=§7...§r
+action.hint.exit.console.player=§7...§r
+action.hint.exit.schema.player=§7...§r

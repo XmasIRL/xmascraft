@@ -1,0 +1,19 @@
+{
+
+  "format_version": "1.8.0",
+
+  "render_controllers": {
+
+    "controller.render.gift": {
+      "is_hurt_color": {},
+      "arrays": { "textures": { "array.skins":[
+          "texture.default",
+          "texture.red",
+          "texture.green",
+          "texture.blue"
+      ]}},
+      "geometry": "geometry.default", "materials": [ { "*": "material.default" } ], "textures": [ "array.skins[ query.variant ]" ]
+    }
+
+  }
+}

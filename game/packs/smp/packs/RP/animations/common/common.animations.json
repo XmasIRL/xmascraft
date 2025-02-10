@@ -1,0 +1,29 @@
+{
+    "format_version": "1.20.0",
+    "animations": {
+        "animation.common.billboard": {
+            "loop": true,
+            "bones": {
+                "root": {
+                    "rotation": ["query.camera_rotation(0)", "query.camera_rotation(1)", 0]
+                }
+            }
+        },
+        "animation.common.billboard.x": {
+            "loop": true,
+            "bones": {
+                "root": {
+                    "rotation": ["query.camera_rotation(0)", 0, 0]
+                }
+            }
+        },
+        "animation.common.billboard.y": {
+            "loop": true,
+            "bones": {
+                "root": {
+                    "rotation": [0, "query.camera_rotation(1)", 0]
+                }
+            }
+        }
+    }
+}

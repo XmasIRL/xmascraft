@@ -1,0 +1,31 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "pack_scope": "global",
+    "uuid": "ab10db6c-0ab3-47ff-9de0-6653727cc071",
+    "version": [
+      0,
+      0,
+      74
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      50
+    ]
+  },
+  "modules": [
+    {
+      "description": "RP Module",
+      "type": "resources",
+      "uuid": "62081a0d-5e1b-43ac-946c-7f31d077c510",
+      "version": [
+        0,
+        0,
+        74
+      ]
+    }
+  ]
+}

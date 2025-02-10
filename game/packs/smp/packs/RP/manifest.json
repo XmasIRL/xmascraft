@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "uuid": "8cdf2a06-b90f-435b-906b-6f637b2ef71b",
+    "version": [
+      0,
+      0,
+      265
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      50
+    ]
+  },
+  "modules": [
+    {
+      "description": "RP Module",
+      "type": "resources",
+      "uuid": "14d02fea-ae66-4941-8d53-07519f96586e",
+      "version": [
+        0,
+        0,
+        265
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "26204b96-2c4c-46dd-b4bd-57c8ec67353c",
+      "version": [
+        0,
+        0,
+        265
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:entity": {
+
+    "description": {
+
+      "identifier": "x:seat",
+      "is_spawnable": false,
+      "is_summonable": true
+
+    },
+
+    "component_groups": {
+
+      "x:despawn":{"minecraft:instant_despawn": {}}
+
+    },
+
+    "components": {
+
+      /// system
+
+      "minecraft:type_family": {"family": [ "x:xmascraft", "x:seat" ]},
+      "minecraft:nameable": { "allow_name_tag_renaming": false, "always_show": false },
+      "minecraft:rideable": { "seat_count": 1, "family_types": [ "player" ], "seats": [ { "position": [ 0, 0, 0 ] } ] },
+      "minecraft:environment_sensor": { "triggers": [
+        {
+          "filters": { "all_of": [
+              {"test": "rider_count", "subject": "self", "value": 0}
+          ]},
+          "event": "x:despawn"
+        },
+        {
+          "filters": { "all_of": [
+              {"test": "is_riding", "subject": "self", "operator": "not"}
+          ]},
+          "event": "x:despawn"
+        }
+      ]},
+
+      /// physics
+
+      "minecraft:physics": { "has_collision": false, "has_gravity": false },
+      "minecraft:collision_box": { "height": 0.00001, "width": 0.00001 },
+      "minecraft:custom_hit_test": { "hitboxes": [{ "width": 0.00001, "height": 0.00001, "pivot": [ 0, 1000, 0 ]}] },
+      "minecraft:pushable": {"is_pushable": false,"is_pushable_by_piston": false},
+      "minecraft:knockback_resistance": {"value": 1, "max": 1},
+
+      /// health
+
+      "minecraft:damage_sensor": {"triggers":{"deals_damage": "no"}},
+      "minecraft:breathable": { "breathes_solids": true, "breathes_water": true, "breathes_lava": true }
+
+    },
+
+    "events": {
+
+      "x:despawn": { "add": { "component_groups" : [ "x:despawn" ] } }
+
+    }
+
+  }
+}

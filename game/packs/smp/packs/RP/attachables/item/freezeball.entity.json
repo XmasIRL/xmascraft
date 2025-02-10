@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "x:freezeball",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/freezeball",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.attachable.item_64"
+      },
+      "animations": {
+          "hold_first_person": "animation.attachable.hold_first_person",
+          "hold_third_person": "animation.attachable.hold_third_person"
+      },
+      "scripts": {
+          "animate": [
+              { "hold_first_person": "context.is_first_person == 1.0" },
+              { "hold_third_person": "context.is_first_person == 0.0" }
+          ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

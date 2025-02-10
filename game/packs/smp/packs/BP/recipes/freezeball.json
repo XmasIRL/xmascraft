@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:recipe_shapeless": {
+    "description": { "identifier": "x:freezeball" },
+    "tags": [ "crafting_table" ],
+    "ingredients":[
+      {"item": "minecraft:snowball"},
+      {"item": "minecraft:powder_snow_bucket"}
+    ],
+    "result": {
+      "item": "x:freezeball",
+      "count": 1
+    }
+  }
+}

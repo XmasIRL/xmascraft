@@ -1,0 +1,41 @@
+{
+
+  "format_version": "1.16.100",
+
+  "minecraft:client_entity": {
+
+    "description": {
+
+      "identifier": "x:freezeball_projectile",
+
+      "geometry"  : { "default": "geometry.item" },
+
+      "materials" : { "default": "entity_alphatest" },
+
+      "textures"  : { "default": "textures/entity/item/freezeball" },
+
+      "animations": {
+
+        "billboard": "animation.common.billboard"
+
+      },
+
+      "scripts"   : {
+
+        "scale"   : "0.5",
+
+        "animate" : [  "billboard"  ]
+
+      },
+
+      "render_controllers": [
+
+        { "controller.render.default.no_color": "q.property('x:is.visible') && q.distance_from_camera > 2" }
+
+      ]
+
+    }
+
+  }
+
+}

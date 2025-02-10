@@ -1,0 +1,178 @@
+{
+
+  "format_version": "1.8.0",
+
+  "render_controllers": {
+
+  /// custom
+
+  "controller.render.player.wizard_staff": {
+    "geometry": "geometry.wizard_staff",
+    "materials": [ { "*": "material.glowing" } ],
+    "textures": [ "texture.wizard_staff" ],
+    "part_visibility": [{ "*": true }]
+  },
+
+  "controller.render.player.soul_reaper": {
+    "arrays": {
+      "textures": { "Array.textures":[ "texture.soul_reaper", "texture.soul_reaper.glowing" ]},
+      "materials": { "Array.materials":[ "material.default", "material.glowing" ]}
+    },
+    "geometry": "geometry.soul_reaper",
+    "materials": [ { "*": "Array.materials[ v.render_soul_reaper_material ?? 0 ]" } ],
+    "textures": [ "Array.textures[ v.render_soul_reaper_texture ?? 0 ]" ],
+    "part_visibility": [{ "*": true }]
+  },
+
+  /// vanilla
+
+  "controller.render.player.first_person": {
+    "arrays": {
+      "geometries": { "Array.geometries":[
+        "geometry.default",
+        "geometry.slumpy",
+        "geometry.enderman"
+      ]},
+      "materials": { "Array.materials":[
+        "material.default",
+        "material.glowing",
+        "material.enderman"
+      ]},
+      "textures": { "Array.textures":[
+        "texture.default",
+        "texture.xmas",
+        "texture.yuzu",
+        "texture.yuzu.glowing",
+        "texture.wiz",
+        "texture.slumpy",
+        "texture.kate",
+        "texture.mic",
+        "texture.kate.snow",
+        "texture.yeyinde",
+        "texture.gray",
+        "texture.power",
+        "texture.taptap",
+        "texture.j",
+        "texture.power.infected1",
+        "texture.virgo",
+        "texture.kate.sunrise",
+        "texture.power.infected2",
+        "texture.power.infected3",
+        "texture.power.winter",
+        "texture.power.super",
+        "texture.ominous",
+        "texture.bob",
+        "texture.astro",
+        "texture.moo",
+        "texture.cheezy",
+        "texture.cheezy.formal",
+        "texture.kate.formal",
+        "texture.power.formal",
+        "texture.moo.faceless",
+        "texture.enderman",
+        "texture.yeyinde.alien",
+        "texture.power.date"
+      ]}
+    },
+    "geometry" : "Array.geometries[ v.render_first_person_geometry ?? 0 ]",
+    "materials": [ { "*": "Array.materials[ v.render_first_person_materials ?? 0 ]" } ],
+    "textures" : [ "Array.textures[ v.render_first_person_texture ?? 0 ]" ],
+    "part_visibility": [
+      { "*":            "v.render_first_person_all ?? false"    },
+      { "rightArm":     "v.render_first_person_rightArm ?? true"   },
+      { "rightSleeve":  "v.render_first_person_rightSleeve ?? true"},
+      { "leftArm":      "v.render_first_person_leftArm ?? true"    },
+      { "leftSleeve":   "v.render_first_person_leftSleeve ?? true" }
+    ]
+  },
+
+  "controller.render.player.third_person": {
+    "arrays": {
+      "geometries": { "Array.geometries":[
+            "geometry.default",
+            "geometry.slumpy",
+            "geometry.enderman"
+      ]},
+      "materials": { "Array.materials":[
+          "material.default",
+          "material.glowing",
+          "material.enderman"
+      ]},
+      "textures": { "Array.textures":[
+            "texture.default",
+            "texture.xmas",
+            "texture.yuzu",
+            "texture.yuzu.glowing",
+            "texture.wiz",
+            "texture.slumpy",
+            "texture.kate",
+            "texture.mic",
+            "texture.kate.snow",
+            "texture.yeyinde",
+            "texture.gray",
+            "texture.power",
+            "texture.taptap",
+            "texture.j",
+            "texture.power.infected1",
+            "texture.virgo",
+            "texture.kate.sunrise",
+            "texture.power.infected2",
+            "texture.power.infected3",
+            "texture.power.winter",
+            "texture.power.super",
+            "texture.ominous",
+            "texture.bob",
+            "texture.astro",
+            "texture.moo",
+            "texture.cheezy",
+            "texture.cheezy.formal",
+            "texture.kate.formal",
+            "texture.power.formal",
+            "texture.moo.faceless",
+            "texture.enderman",
+            "texture.yeyinde.alien",
+            "texture.power.date"
+      ]}
+    },
+    "geometry" : "Array.geometries[ v.render_third_person_geometry ?? 0 ]",
+    "materials": [ { "*": "Array.materials[ v.render_third_person_material ?? 0 ]" } ],
+    "textures" : [ "Array.textures[ v.render_third_person_texture ?? 0 ]" ],
+    "part_visibility": [
+      { "*":              "v.render_third_person_all ?? true"      },
+      { "helmet":         "v.render_third_person_helmet ?? true"       },
+      { "leftLegging":    "v.render_third_person_leftLegging ?? true"  },
+      { "rightLegging":   "v.render_third_person_rightLegging ?? true" },
+      { "leftBoot":       "v.render_third_person_leftBoot ?? true"     },
+      { "rightBoot":      "v.render_third_person_rightBoot ?? true"    },
+      { "leftSock":       "v.render_third_person_leftSock ?? true"     },
+      { "rightSock":      "v.render_third_person_rightSock ?? true"    },
+      { "bodyArmor":      "v.render_third_person_bodyArmor ?? true"    },
+      { "leftArmArmor":   "v.render_third_person_leftArmArmor ?? true" },
+      { "rightArmArmor":  "v.render_third_person_rightArmArmor ?? true"},
+      { "belt":           "v.render_third_person_belt ?? true"         }
+    ]
+  },
+
+  "controller.render.player.first_person_spectator": {
+    "geometry" : "geometry.default",
+    "materials": [ { "*": "material.default" } ],
+    "textures" : [ "texture.default" ],
+    "part_visibility": [ { "*": false } ]
+  },
+
+  "controller.render.player.third_person_spectator": {
+    "geometry" : "geometry.default",
+    "materials": [ { "*": "material.spectator" } ],
+    "textures" : [ "texture.default" ],
+    "part_visibility": [ { "*": false } ],
+    "color": { "r": "1.0f", "g": "1.0f", "b": "1.0f", "a": "0.3f" }
+  },
+
+  "controller.render.player.map": {
+    "geometry" : "geometry.default",
+    "materials": [ { "*": "material.default" } ],
+    "textures" : [ "texture.default" ],
+    "part_visibility": [ { "*": false }, { "head": true }, { "hat": true }, { "helmet": true } ]
+  }
+
+}}

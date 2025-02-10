@@ -1,0 +1,7 @@
+{
+   "format_version" : "1.14.0",
+   "sound_definitions" : {
+      "ui.heart_beat.loop" : { "category" : "ui", "sounds" : [ { "name" : "sounds/ui/heart_beat" }]},
+      "ui.panting.loop"    : { "category" : "ui", "sounds" : [ { "name" : "sounds/ui/panting"    }]}
+   }
+}

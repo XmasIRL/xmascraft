@@ -1,0 +1,56 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.4.json",
+	"author": "Xmas",
+	"name": "xmascraft_theme",
+	"namespace": "x",
+  "worlds": [
+  ],
+	"packs": {
+		"behaviorPack": "./packs/BP",
+		"resourcePack": "./packs/RP"
+	},
+	"packDefinitions": {},
+	"regolith": {
+		"dataPath": "./packs/data",
+		"filterDefinitions": {
+			"exaroton_deploy" : { "url": "github.com/XmasIRL/regolith-filters-xmas"           , "version": "HEAD" },
+			"texture_list"    : { "url": "github.com/XmasIRL/regolith-filters"                , "version": "HEAD" },
+			"package"         : { "url": "github.com/XmasIRL/regolith-filters-hatchibombotar" , "version": "HEAD" },
+			"pack_commons"    : { "url": "github.com/XmasIRL/regolith-filters-hatchibombotar" , "version": "HEAD" }
+		},
+		"formatVersion": "1.4.0",
+		"profiles": {
+			"default": {
+				"export" : { "build": "standard", "readOnly": false, "target": "development" },
+				"filters": [
+          {"filter": "pack_commons"},
+          {"filter": "texture_list"}
+        ]
+			},
+			"build": {
+				"export" : { "build": "standard", "readOnly": false, "target": "local" },
+				"filters": [
+          {"profile": "default"},
+          {"filter": "package", "settings":{
+            "package_location": "./build/package/packs",
+            "package": { "mcpack": {"BP":false} }
+          }},
+          {"filter": "package", "settings":{
+            "package_location": "./build/package/addon",
+            "package": { "mcaddon":{"BP":false} }
+          }}
+        ]
+			},
+			"deploy": {
+				"export" : { "build": "standard", "readOnly": false, "target": "local" },
+				"filters": [
+          {"profile": "build"},
+          {"filter": "exaroton_deploy", "settings":{
+            "packsPath": "build/package/packs",
+            "keepExistingPacks": true
+          }}
+        ]
+			}
+		}
+	}
+}

@@ -1,0 +1,336 @@
+{
+
+  "format_version": "1.10.0",
+
+  "minecraft:client_entity": {
+
+    "description": {
+
+      "identifier": "minecraft:player",
+
+      "geometry": {
+
+        /// custom
+
+        "slumpy"       : "geometry.player.slumpy",
+        "enderman"     : "geometry.player.enderman",
+        "wizard_staff" : "geometry.player.wizard_staff",
+        "soul_reaper"  : "geometry.player.soul_reaper",
+
+        /// vanilla
+
+        "default" : "geometry.humanoid.custom",
+        "cape"    : "geometry.cape"
+
+      },
+
+      "materials": {
+
+        /// custom
+
+        "glowing"  : "entity_emissive_alpha",
+        "enderman" : "enderman",
+
+        /// vanilla
+
+        "default"  : "entity_alphatest",
+        "cape"     : "entity_alphatest",
+        "animated" : "player_animated",
+        "spectator" : "player_spectator"
+
+      },
+
+      "textures": {
+
+        /// custom
+
+        "xmas"                : "textures/entity/player/skins/xmas/default",
+        "yuzu"                : "textures/entity/player/skins/yuzu/default",
+        "yuzu.glowing"        : "textures/entity/player/skins/yuzu/default.glowing",
+        "wiz"                 : "textures/entity/player/skins/wiz/default",
+        "slumpy"              : "textures/entity/player/skins/slumpy/default",
+        "kate"                : "textures/entity/player/skins/kate/default",
+        "mic"                 : "textures/entity/player/skins/mic/default",
+        "kate.snow"           : "textures/entity/player/skins/kate/snow",
+        "yeyinde"             : "textures/entity/player/skins/yeyinde/default",
+        "gray"                : "textures/entity/player/skins/gray/default",
+        "power"               : "textures/entity/player/skins/power/default",
+        "taptap"              : "textures/entity/player/skins/taptap/default",
+        "j"                   : "textures/entity/player/skins/j/default",
+        "power.infected1"     : "textures/entity/player/skins/power/infected1",
+        "virgo"               : "textures/entity/player/skins/virgo/default",
+        "kate.sunrise"        : "textures/entity/player/skins/kate/sunrise",
+        "power.infected2"     : "textures/entity/player/skins/power/infected2",
+        "power.infected3"     : "textures/entity/player/skins/power/infected3",
+        "power.winter"        : "textures/entity/player/skins/power/winter",
+        "power.super"         : "textures/entity/player/skins/power/super",
+        "ominous"             : "textures/entity/player/skins/ominous/default",
+        "bob"                 : "textures/entity/player/skins/bob/default",
+        "astro"               : "textures/entity/player/skins/astro/default",
+        "moo"                 : "textures/entity/player/skins/moo/default",
+        "cheezy"              : "textures/entity/player/skins/cheezy/default",
+        "cheezy.formal"       : "textures/entity/player/skins/cheezy/formal",
+        "kate.formal"         : "textures/entity/player/skins/kate/formal",
+        "power.formal"        : "textures/entity/player/skins/power/formal",
+        "moo.faceless"        : "textures/entity/player/skins/moo/faceless",
+        "enderman"            : "textures/entity/enderman/enderman",
+        "yeyinde.alien"       : "textures/entity/player/skins/yeyinde/alien",
+        "power.date"          : "textures/entity/player/skins/power/date",
+        "wizard_staff"        : "textures/entity/player/attachments/wizard_staff/default",
+        "soul_reaper"         : "textures/entity/player/attachments/soul_reaper/default",
+        "soul_reaper.glowing" : "textures/entity/player/attachments/soul_reaper/glowing",
+
+        /// vanilla
+
+        "default" : "textures/entity/steve"         ,
+        "cape"    : "textures/entity/cape_invisible"
+
+      },
+
+      "particle_effects": {
+
+        /// custom
+
+        "soul_reaper.particles"             : "x:soul_reaper.blood_mist"
+
+      },
+
+      "animations": {
+
+        /// custom
+
+        "wizard_staff.cast"                 : "animation.player.wizard_staff.cast",
+        "soul_reaper.hold"                  : "animation.player.soul_reaper.hold",
+        "soul_reaper.particles"             : "animation.player.soul_reaper.particles",
+        "soul_reaper.swing"                 : "animation.player.soul_reaper.swing",
+        "soul_reaper.first_person.hold"     : "animation.player.soul_reaper.first_person.hold",
+        "soul_reaper.first_person.swing"    : "animation.player.soul_reaper.first_person.swing",
+        "soul_reaper.ctrl"                  : "controller.animation.player.soul_reaper",
+        "invisible"                         : "animation.player.invisible",
+
+        /// vanilla
+
+        "root"                              : "controller.animation.player.root",
+        "base_controller"                   : "controller.animation.player.base",
+        "hudplayer"                         : "controller.animation.player.hudplayer",
+        "humanoid_base_pose"                : "animation.humanoid.base_pose",
+        "look_at_target"                    : "controller.animation.humanoid.look_at_target",
+        "look_at_target_ui"                 : "animation.player.look_at_target.ui",
+        "look_at_target_default"            : "animation.humanoid.look_at_target.default",
+        "look_at_target_gliding"            : "animation.humanoid.look_at_target.gliding",
+        "look_at_target_swimming"           : "animation.humanoid.look_at_target.swimming",
+        "look_at_target_inverted"           : "animation.player.look_at_target.inverted",
+        "cape"                              : "animation.player.cape",
+        "move.arms"                         : "animation.player.move.arms",
+        "move.legs"                         : "animation.player.move.legs",
+        "swimming"                          : "animation.player.swim",
+        "swimming.legs"                     : "animation.player.swim.legs",
+        "riding.arms"                       : "animation.player.riding.arms",
+        "riding.legs"                       : "animation.player.riding.legs",
+        "holding"                           : "animation.player.holding",
+        "brandish_spear"                    : "animation.humanoid.brandish_spear",
+        "charging"                          : "animation.humanoid.charging",
+        "attack.positions"                  : "animation.player.attack.positions",
+        "attack.rotations"                  : "animation.player.attack.rotations",
+        "sneaking"                          : "animation.player.sneaking",
+        "bob"                               : "animation.player.bob",
+        "damage_nearby_mobs"                : "animation.humanoid.damage_nearby_mobs",
+        "bow_and_arrow"                     : "animation.humanoid.bow_and_arrow",
+        "use_item_progress"                 : "animation.humanoid.use_item_progress",
+        "skeleton_attack"                   : "animation.skeleton.attack",
+        "sleeping"                          : "animation.player.sleeping",
+        "first_person_base_pose"            : "animation.player.first_person.base_pose",
+        "first_person_empty_hand"           : "animation.player.first_person.empty_hand",
+        "first_person_swap_item"            : "animation.player.first_person.swap_item",
+        "first_person_attack_controller"    : "controller.animation.player.first_person_attack",
+        "first_person_attack_rotation"      : "animation.player.first_person.attack_rotation",
+        "first_person_attack_rotation_item" : "animation.player.first_person.attack_rotation_item",
+        "first_person_vr_attack_rotation"   : "animation.player.first_person.vr_attack_rotation",
+        "first_person_walk"                 : "animation.player.first_person.walk",
+        "first_person_map_controller"       : "controller.animation.player.first_person_map",
+        "first_person_map_hold"             : "animation.player.first_person.map_hold",
+        "first_person_map_hold_attack"      : "animation.player.first_person.map_hold_attack",
+        "first_person_map_hold_off_hand"    : "animation.player.first_person.map_hold_off_hand",
+        "first_person_map_hold_main_hand"   : "animation.player.first_person.map_hold_main_hand",
+        "first_person_crossbow_equipped"    : "animation.player.first_person.crossbow_equipped",
+        "first_person_crossbow_hold"        : "animation.player.first_person.crossbow_hold",
+        "first_person_breathing_bob"        : "animation.player.first_person.breathing_bob",
+        "third_person_crossbow_equipped"    : "animation.player.crossbow_equipped",
+        "third_person_bow_equipped"         : "animation.player.bow_equipped",
+        "crossbow_hold"                     : "animation.player.crossbow_hold",
+        "crossbow_controller"               : "controller.animation.player.crossbow",
+        "shield_block_main_hand"            : "animation.player.shield_block_main_hand",
+        "shield_block_off_hand"             : "animation.player.shield_block_off_hand",
+        "blink"                             : "controller.animation.persona.blink",
+        "fishing_rod"                       : "animation.humanoid.fishing_rod",
+        "holding_spyglass"                  : "animation.humanoid.holding_spyglass",
+        "first_person_shield_block"         : "animation.player.first_person.shield_block",
+        "tooting_goat_horn"                 : "animation.humanoid.tooting_goat_horn",
+        "holding_brush"                     : "animation.humanoid.holding_brush",
+        "brushing"                          : "animation.humanoid.brushing",
+        "crawling"                          : "animation.player.crawl",
+        "crawling.legs"                     : "animation.player.crawl.legs",
+        "holding_heavy_core"                : "animation.player.holding_heavy_core"
+
+      },
+
+      "scripts": {
+
+        "scale": "0.9375",
+
+        "variables": {
+
+          /// custom
+
+          "variable.soul_reaper_equipped"   : "public",
+          "variable.soul_reaper_using"      : "public",
+          "variable.wizard_staff_equipped"  : "public",
+          "variable.wizard_staff_using"     : "public"
+
+        },
+
+        "initialize": [
+
+          /// custom
+
+          "v.bob_animation = 0.0;",
+          "v.not.ui = false;",
+          "v.soul_reaper_using = false;",
+          "v.wizard_staff_using = false;",
+          "v.render_first_person_geometry  = 0;",
+          "v.render_first_person_material  = 0;",
+          "v.render_first_person_texture   = 0;",
+          "v.render_first_person = false;",
+          "v.render_first_person_all = false;",
+          "v.render_first_person_rightArm = false;",
+          "v.render_first_person_rightSleeve = false;",
+          "v.render_first_person_leftArm = false;",
+          "v.render_first_person_leftSleeve = false;",
+          "v.render_third_person_geometry  = 0;",
+          "v.render_third_person_material  = 0;",
+          "v.render_third_person_texture   = 0;",
+          "v.render_third_person = false;",
+          "v.render_third_person_all = false;",
+          "v.render_third_person_helmet = false;",
+          "v.render_third_person_leftLegging = false;",
+          "v.render_third_person_rightLegging = false;",
+          "v.render_third_person_leftBoot = false;",
+          "v.render_third_person_rightBoot = false;",
+          "v.render_third_person_leftSock = false;",
+          "v.render_third_person_rightSock = false;",
+          "v.render_third_person_bodyArmor = false;",
+          "v.render_third_person_leftArmArmor = false;",
+          "v.render_third_person_rightArmArmor = false;",
+          "v.render_third_person_belt = false;",
+          "v.render_soul_reaper_material = 0;",
+          "v.render_soul_reaper_texture = 0;",
+
+          /// vanilla
+
+          "v.is_holding_right = 0.0;",
+          "v.is_blinking = 0.0;",
+          "v.last_blink_time = 0.0;",
+          "v.hand_bob = 0.0;"
+
+        ],
+
+        "pre_animation": [
+
+          /// vanilla (process first to avoid conflicts)
+
+          "v.helmet_layer_visible = 1.0;",
+          "v.leg_layer_visible = 1.0;",
+          "v.boot_layer_visible = 1.0;",
+          "v.chest_layer_visible = 1.0;",
+          "v.attack_body_rot_y = Math.sin(360*Math.sqrt(v.attack_time)) * 5.0;",
+          "v.tcos0 = (math.cos(q.modified_distance_moved * 38.17) * q.modified_move_speed / v.gliding_speed_value) * 57.3;",
+          "v.first_person_rotation_factor = math.sin((1 - v.attack_time) * 180.0);",
+          "v.hand_bob = q.life_time < 0.01 ? 0.0 : v.hand_bob + ((q.is_on_ground && q.is_alive ? math.clamp(math.sqrt(math.pow(q.position_delta(0), 2.0) + math.pow(q.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - v.hand_bob) * 0.02;",
+          "v.map_angle = math.clamp(1 - v.player_x_rotation / 45.1, 0.0, 1.0);",
+          "v.item_use_normalized = q.main_hand_item_use_duration / q.main_hand_item_max_duration;",
+
+          /// custom
+
+          "v.bob_animation                      = v.hand_bob;",
+          "v.not.ui                             = !v.is_paperdoll && !q.is_in_ui;",
+          "v.soul_reaper_equipped               = v.not.ui && q.is_item_name_any('slot.weapon.mainhand',0,'x:soul_reaper');",
+          "v.soul_reaper_using                  = v.soul_reaper_equipped && v.attack_time > 0.0;",
+          "v.wizard_staff_equipped              = v.not.ui && q.is_item_name_any('slot.weapon.mainhand',0,'x:wizard_staff');",
+          "v.wizard_staff_using                 = v.wizard_staff_equipped && q.out_of_control;",
+          "v.animate_vanilla_move_arms          = !v.soul_reaper_equipped;",
+          "v.animate_vanilla_move_legs          = true;",
+          "v.animate_vanilla_holding            = !v.soul_reaper_equipped;",
+          "v.animate_vanilla_item_use           = !v.soul_reaper_equipped;",
+          "v.animate_vanilla_attack             = !v.soul_reaper_equipped;",
+          "v.render_first_person_geometry       = 0;",
+          "v.render_first_person_material       = 0;",
+          "v.render_first_person_texture        = q.skin_id > -1 ? q.skin_id : 0;",
+          "v.render_third_person_geometry       = 0;",
+          "v.render_third_person_material       = 0;",
+          "v.render_third_person_texture        = q.skin_id > -1 ? q.skin_id : 0;",
+          "(q.skin_id == 3) ? {v.render_first_person_material = 1; v.render_third_person_material = 1;};",
+          "(q.skin_id == 5) ? {v.render_first_person_geometry = 1; v.render_third_person_geometry = 1;};",
+          "(q.skin_id == 30) ? {v.render_first_person_geometry = 2; v.render_third_person_geometry = 2;};",
+          "(q.skin_id == 30) ? {v.render_first_person_material = 2; v.render_third_person_material = 2;};",
+          "v.render_first_person                = v.is_first_person && !q.is_spectator && !(q.skin_id == 30);",
+          "v.render_first_person_spectator      = v.is_first_person && q.is_spectator;",
+          "v.render_third_person                = !v.is_first_person && !v.map_face_icon && !q.is_spectator;",
+          "v.render_third_person_spectator      = !v.is_first_person && !v.map_face_icon && q.is_spectator;",
+          "v.render_map_face_icon               = v.map_face_icon;",
+          "v.render_soul_reaper_visible         = v.soul_reaper_equipped && (v.render_third_person || v.render_first_person);",
+          "v.render_soul_reaper_texture         = v.soul_reaper_using ? 1 : 0;",
+          "v.render_soul_reaper_material        = v.soul_reaper_using ? 1 : 0;",
+          "v.render_wizard_staff_visible        = v.wizard_staff_equipped && (v.render_third_person || v.render_first_person);",
+          "v.render_first_person_all            = false;",
+          "v.render_first_person_rightArm       = q.get_equipped_item_name(0, 1) =='' || q.get_equipped_item_name(0, 1) == 'filled_map';",
+          "v.render_first_person_rightSleeve    = q.get_equipped_item_name(0, 1) =='' || q.get_equipped_item_name(0, 1) == 'filled_map';",
+          "v.render_first_person_leftArm        = (q.get_equipped_item_name(0, 1) == 'filled_map' && q.get_equipped_item_name('off_hand') != 'shield') || (q.get_equipped_item_name('off_hand') == 'filled_map' && !q.item_is_charged) || (!q.item_is_charged && (v.item_use_normalized > 0 && v.item_use_normalized < 1.0));",
+          "v.render_first_person_leftSleeve     = (q.get_equipped_item_name(0, 1) == 'filled_map' && q.get_equipped_item_name('off_hand') != 'shield') || (q.get_equipped_item_name('off_hand') == 'filled_map' && !q.item_is_charged) || (!q.item_is_charged && (v.item_use_normalized > 0 && v.item_use_normalized < 1.0));",
+          "v.render_third_person_all            = true;",
+          "v.render_third_person_helmet         = v.helmet_layer_visible;",
+          "v.render_third_person_leftLegging    = v.leg_layer_visible;",
+          "v.render_third_person_rightLegging   = v.leg_layer_visible;",
+          "v.render_third_person_leftBoot       = v.boot_layer_visible;",
+          "v.render_third_person_rightBoot      = v.boot_layer_visible;",
+          "v.render_third_person_leftSock       = v.boot_layer_visible && v.leg_layer_visible;",
+          "v.render_third_person_rightSock      = v.boot_layer_visible && v.leg_layer_visible;",
+          "v.render_third_person_bodyArmor      = v.chest_layer_visible && !q.has_cape;",
+          "v.render_third_person_leftArmArmor   = v.chest_layer_visible && !q.has_cape;",
+          "v.render_third_person_rightArmArmor  = v.chest_layer_visible && !q.has_cape;",
+          "v.render_third_person_belt           = v.chest_layer_visible && v.leg_layer_visible;"
+        ],
+
+        "animate": [
+
+          /// custom
+
+          "root",
+          { "soul_reaper.ctrl":   "v.soul_reaper_equipped"  },
+          { "wizard_staff.cast":  "v.wizard_staff_using"    }
+
+        ]
+      },
+
+      "render_controllers": [
+
+        /// custom
+
+        { "controller.render.player.soul_reaper":               "v.render_soul_reaper ?? false"             },
+        { "controller.render.player.wizard_staff":              "v.render_wizard_staff ?? false"            },
+
+        /// vanilla
+
+        { "controller.render.player.first_person_spectator":    "v.render_first_person_spectator ?? false"  },
+        { "controller.render.player.third_person_spectator":    "v.render_third_person_spectator ?? false"  },
+        { "controller.render.player.first_person":              "v.render_first_person ?? false"            },
+        { "controller.render.player.third_person":              "v.render_third_person ?? false"            },
+        { "controller.render.player.map":                       "v.render_map_face_icon ?? false"           }
+
+      ],
+
+      "enable_attachables": true,
+      "hide_armor": true
+
+  }
+
+}}

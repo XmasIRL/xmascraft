@@ -1,0 +1,4 @@
+{
+  "namespace": "hud",
+  "root_panel/mob_effects_renderer": { "visible": false, "bindings": [] }
+}
