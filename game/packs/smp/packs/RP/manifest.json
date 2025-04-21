@@ -1,40 +1,19 @@
 {
   "format_version": 2,
   "header": {
-    "name": "pack.name",
-    "description": "pack.description",
-    "uuid": "8cdf2a06-b90f-435b-906b-6f637b2ef71b",
-    "version": [
-      0,
-      0,
-      265
-    ],
-    "min_engine_version": [
-      1,
-      21,
-      50
-    ]
+    "name"               : "pack.name",
+    "description"        : "pack.description",
+    "uuid"               : "a1e12eb2-ee53-43b6-ac6f-062b136d8f37",
+    "version"            : [ 0, 1, 0 ],
+    "min_engine_version" : [ 1, 21, 73 ]
   },
   "modules": [
     {
-      "description": "RP Module",
-      "type": "resources",
-      "uuid": "14d02fea-ae66-4941-8d53-07519f96586e",
-      "version": [
-        0,
-        0,
-        265
-      ]
+      "description" : "RP Module",
+      "type"        : "resources",
+      "uuid"        : "7d202f66-3c78-479b-84b8-9c2d5f032b43",
+      "version"     : [ 0, 1, 0 ]
     }
   ],
-  "dependencies": [
-    {
-      "uuid": "26204b96-2c4c-46dd-b4bd-57c8ec67353c",
-      "version": [
-        0,
-        0,
-        265
-      ]
-    }
-  ]
+  "dependencies": []
 }

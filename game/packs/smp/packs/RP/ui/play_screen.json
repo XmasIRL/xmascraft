@@ -9,7 +9,9 @@
   },
 
   "screen_entrance_animation_push_fade": {
-    "from": 0.0, "to": 0.0, "duration": 2,
+    "from"       : 0.0,
+    "to"         : 0.0,
+    "duration"   : 2,
     "anim_type"  : "alpha",
     "easing"     : "out_cubic",
     "next"       : "@play.screen_entrance_animation_push_fade_post",
@@ -18,13 +20,17 @@
   },
 
   "screen_entrance_animation_push_fade_post": {
-    "from": 0.0, "to": 1.0, "duration": "$transition_time_push",
-    "anim_type": "alpha",
-    "easing": "out_cubic"
+    "from"       : 0.0,
+    "to"         : 1.0,
+    "duration"   : "$transition_time_push",
+    "anim_type"  : "alpha",
+    "easing"     : "out_cubic"
   },
 
   "screen_entrance_animation_pop_fade": {
-    "from": 0.0, "to": 0.0, "duration": 2,
+    "from"       : 0.0,
+    "to"         : 0.0,
+    "duration"   : 2,
     "anim_type"  : "alpha",
     "easing"     : "out_cubic",
     "next"       : "@play.screen_entrance_animation_pop_fade_post",
@@ -33,7 +39,8 @@
   },
 
   "screen_entrance_animation_pop_fade_post": {
-    "from": 0.0, "to": 1.0,
+    "from"       : 0.0,
+    "to"         : 1.0,
     "anim_type"  : "alpha",
     "duration"   : "$transition_time_pop",
     "easing"     : "out_cubic"

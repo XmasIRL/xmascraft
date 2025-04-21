@@ -2,9 +2,5 @@
 	"resource_pack_name": "Xmascraft SMP Add-on",
 	"texture_name": "atlas.items",
 	"texture_data": {
-		"x:op"        : { "textures": "textures/items/op"         },
-		"x:freezeball":	{ "textures": "textures/items/freezeball" },
-		"x:dan_ring"  : { "textures": "textures/items/dan_ring"   },
-		"x:steam_bomb":	{ "textures": "textures/items/steam_bomb" }
 	}
 }

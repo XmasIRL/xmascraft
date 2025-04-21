@@ -2,12 +2,12 @@
     "namespace": "start",
     "start_screen": {
         "$screen_bg_content": "start.background",
-        "$screen_content": "start.start_screen_content"
+        "$screen_content"   : "start.start_screen_content"
     },
     "background": {
-        "type": "image",
-        "fill": true,
+        "type"   : "image",
+        "fill"   : true,
         "texture": "textures/ui/main_menu_bg",
-        "size": [ "100%", "100%" ]
+        "size"   : [ "100%", "100%" ]
     }
 }

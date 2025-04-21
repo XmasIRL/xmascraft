@@ -6,6 +6,8 @@
 # *.ext : Matches files with the given extension.
 # !     : Negates a pattern (use with caution).
 
+*.env
+
 /build/**
 /local/**
 /.regolith

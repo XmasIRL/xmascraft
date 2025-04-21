@@ -1,8 +1,9 @@
 {
   "namespace": "pause",
-  "the_icon_panel": { "ignored": true },
-  "info_panel": { "ignored": true },
-  "skin_panel": { "ignored": true},
-  "the_rest_panel/fill_2": { "ignored": true},
-  "store_button_panel": { "ignored": true}
+
+  "the_icon_panel"       : { "ignored": true },
+  "info_panel"           : { "ignored": true },
+  "skin_panel"           : { "ignored": true },
+  "the_rest_panel/fill_2": { "ignored": true },
+  "store_button_panel"   : { "ignored": true }
 }

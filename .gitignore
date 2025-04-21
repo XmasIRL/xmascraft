@@ -6,9 +6,11 @@
 # *.ext : Matches files with the given extension.
 # !     : Negates a pattern (use with caution).
 
+*.env
+
 desktop.ini
 folder_icon.ico
-.vscode/**
-game/local_server/**
+game/server/local_server/**
 
+.vscode/**
 content/**

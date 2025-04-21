@@ -28,7 +28,8 @@
 			"pack_commons"     : { "url": "github.com/XmasIRL/regolith-filters-hatchibombotar" , "version": "HEAD" },
 			"molang_insert"    : { "url": "github.com/XmasIRL/regolith-filters-hatchibombotar" , "version": "HEAD" },
 			"package"          : { "url": "github.com/XmasIRL/regolith-filters-hatchibombotar" , "version": "HEAD" },
-			"esbuild_executor" : { "url": "github.com/XmasIRL/regolith-filters-majestikbutter" , "version": "HEAD" }
+			"esbuild_executor" : { "url": "github.com/XmasIRL/regolith-filters-majestikbutter" , "version": "HEAD" },
+			"jsonte"           : { "url": "github.com/XmasIRL/regolith-filters-mcdevkit"       , "version": "HEAD" }
 		},
 		"formatVersion": "1.4.0",
 		"profiles": {
@@ -39,6 +40,7 @@
           {"filter": "link_manifests"},
           {"filter": "texture_list"},
           {"filter": "molang_insert"},
+          {"filter": "jsonte"},
           {"filter": "esbuild_executor", "settings": {
             "removeGlob": "**/scripts/ts/**",
             "buildOptions":{
